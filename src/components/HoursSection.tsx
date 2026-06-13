@@ -17,9 +17,9 @@ const HoursSection = () => (
           <img src={terraceImg} alt="Poke Bowl de Re·Start Coffee" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div>
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium">Horaris</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium"></p>
           <h2 className="font-display text-3xl md:text-4xl font-semibold mb-8 text-foreground leading-snug">
-            Ens trobaràs aquí
+            Horaris
           </h2>
           <div className="space-y-1">
             {schedule.map((item) => (

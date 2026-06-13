@@ -80,7 +80,7 @@ const MenuSection = () => (
           </div>
         ))}
       </div>
-      <a href="/menu.pdf" className="block mx-auto mt-8 w-fit px-6 py-3 rounded-full bg-foreground text-background font-semibold">Ver carta completa</a>\n      <p className="text-center text-xs text-muted-foreground mt-8">En cas d'al·lèrgies, consulta amb el personal · En caso de alergias, consulta con el personal</p>
+      <a href="/Carta.pdf" className="block mx-auto mt-8 w-fit px-6 py-3 rounded-full bg-foreground text-background font-semibold">Ver carta completa</a>\n      <p className="text-center text-xs text-muted-foreground mt-8">En cas d'al·lèrgies, consulta amb el personal · En caso de alergias, consulta con el personal</p>
     </div>
   </section>
 );

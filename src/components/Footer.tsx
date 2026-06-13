@@ -6,9 +6,9 @@ const Footer = () => (
     <div className="container px-6 py-14">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex items-center gap-3">
-          <img src={logoImg} alt="Re·Start Coffee" className="w-10 h-10 object-contain brightness-0 invert opacity-80" />
+          <img src={logoImg} alt="Restart Coffee" className="w-10 h-10 object-contain brightness-0 invert opacity-80" />
           <div>
-            <h3 className="font-display text-lg font-semibold">Re · Start</h3>
+            <h3 className="font-display text-lg font-semibold">Restart</h3>
             <p className="text-white/50 text-xs mt-0.5">Brunch & Specialty Coffee · Vilanova i la Geltrú</p>
           </div>
         </div>

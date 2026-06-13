@@ -14,10 +14,10 @@ const HeroSection = () => (
       <p className="text-white/75 text-base md:text-lg font-body font-light max-w-xl mx-auto mb-10 leading-relaxed tracking-wide">
         Specialty coffee · Brunch · Terraza dog-friendly
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#carta" className="bg-white text-foreground font-semibold px-8 py-3.5 rounded-full transition-all duration-300 text-sm tracking-wide hover:bg-white/90">
-          Ver carta
-        </a>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <a href="/Carta.pdf" target="_blank" rel="noopener noreferrer" className="bg-white text-foreground font-semibold px-8 py-3.5 rounded-full transition-all duration-300 text-sm tracking-wide hover:bg-white/90">
+    Ver carta
+  </a>
         <a href="#visita" className="border border-white/50 hover:border-white text-white font-medium px-8 py-3.5 rounded-full transition-all duration-300 text-sm tracking-wide">
           Cómo llegar
         </a>

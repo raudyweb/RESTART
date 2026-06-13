@@ -1,5 +1,5 @@
 import { Instagram, Mail, Phone } from "lucide-react";
-import logoImg from "@/assets/logo.jpg";
+import logoImg from "@/assets/restart-logoo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-primary-foreground">

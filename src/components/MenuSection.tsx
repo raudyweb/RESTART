@@ -48,7 +48,7 @@ const categories = [
 ];
 
 const MenuSection = () => (
-  <section id="carta" className="py-24 bg-muted/30">
+  <section id="carta" className="py-24 bg-foreground">
     <div className="container px-6">
       <div className="text-center mb-16">
         <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium">Carta</p>

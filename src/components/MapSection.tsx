@@ -1,5 +1,4 @@
 import { MapPin, Phone, Mail, Instagram } from "lucide-react";
-
 const MapSection = () => (
   <section id="visita" className="py-20 bg-muted/40">
     <div className="container px-6">
@@ -9,7 +8,8 @@ const MapSection = () => (
       </div>
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="rounded-2xl overflow-hidden shadow-lg h-80 md:h-96">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.908346105353!2d1.72313757586994!3d41.22376777132122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a387915fb5626f%3A0xd7125a13c5d4ba64!2sRestart%20Coffee!5e0!3m2!1ses!2ses!4v1781360977596!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.908346105353!2d1.72313757586994!3d41.22376777132122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a387915fb5626f%3A0xd7125a13c5d4ba64!2sRestart%20Coffee!5e0!3m2!1ses!2ses!4v1781360977596!5m2!1ses!2ses"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -56,11 +56,12 @@ const MapSection = () => (
               <a href="https://instagram.com/rscafevng" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">@rscafevng</a>
             </div>
           </div>
-          <a
-            href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16">
+          
+            href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2">
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2"
+          >
             <MapPin size={16} />
             Cómo llegar
           </a>
@@ -69,5 +70,4 @@ const MapSection = () => (
     </div>
   </section>
 );
-
 export default MapSection;

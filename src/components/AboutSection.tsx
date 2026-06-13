@@ -24,7 +24,7 @@ const AboutSection = () => (
           </p>
           <div className="flex flex-wrap gap-3">
             {badges.map((b) => (
-             <span key={b.label} className="inline-flex items-center gap-2 bg-amber-800 text-white px-4 py-2 rounded-full text-xs font-medium tracking-wide">
+             <span key={b.label} className="inline-flex items-center gap-2 bg-foreground text-white px-4 py-2 rounded-full text-xs font-medium tracking-wide">
                 {b.icon}
                 {b.label}
               </span>
@@ -35,7 +35,7 @@ const AboutSection = () => (
           <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
             <img src={aboutImg} alt="Tostada de aguacate en Re·Start Coffee" className="w-full h-full object-cover" loading="lazy" />
           </div>
-         <div className="absolute -bottom-4 -left-4 bg-amber-800 rounded-xl px-5 py-4 shadow-lg border border-border/40">
+        <div className="absolute -bottom-4 -left-4 bg-foreground rounded-xl px-5 py-4 shadow-lg border border-border/40">
            <p className="font-display text-2xl font-semibold text-white">4.8 <span className="text-yellow-400">★</span></p>
              <p className="text-xs text-white/80 mt-0.5">+150 reseñas en Google</p>
           </div>

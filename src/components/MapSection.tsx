@@ -57,7 +57,7 @@ const MapSection = () => (
             </div>
           </div>
           <a
-            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.908346105353!2d1.72313757586994!3d41.22376777132122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a387915fb5626f%3A0xd7125a13c5d4ba64!2sRestart%20Coffee!5e0!3m2!1ses!2ses!4v1781360977596!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16">
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2">

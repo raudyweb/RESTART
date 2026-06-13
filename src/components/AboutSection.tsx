@@ -24,7 +24,7 @@ const AboutSection = () => (
           </p>
           <div className="flex flex-wrap gap-3">
             {badges.map((b) => (
-              <span key={b.label} className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-2 rounded-full text-xs font-medium tracking-wide">
+             <span key={b.label} className="inline-flex items-center gap-2 bg-amber-800 text-white px-4 py-2 rounded-full text-xs font-medium tracking-wide">
                 {b.icon}
                 {b.label}
               </span>

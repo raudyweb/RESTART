@@ -9,7 +9,7 @@ const HeroSection = () => (
         Vilanova i la Geltrú · Brunch & Coffee
       </p>
       <h1 className="font-display text-5xl md:text-7xl font-semibold text-white mb-5 leading-tight">
-        Re · Start
+        Restart Coffee
       </h1>
       <p className="text-white/75 text-base md:text-lg font-body font-light max-w-xl mx-auto mb-10 leading-relaxed tracking-wide">
         Specialty coffee · Brunch · Terraza dog-friendly

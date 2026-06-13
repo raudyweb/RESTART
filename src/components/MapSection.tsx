@@ -10,7 +10,7 @@ const MapSection = () => (
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="rounded-2xl overflow-hidden shadow-lg h-80 md:h-96">
           <iframe
-            src="https://maps.google.com/?q=Carrer+dels+Escolapis,+8,+08800+Vilanova+i+la+Geltrú"
+            src="https://share.google/sLiODzooFdHOycLnw"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -58,7 +58,7 @@ const MapSection = () => (
             </div>
           </div>
           <a
-            href="https://maps.google.com/?q=Carrer+dels+Escolapis,+8,+08800+Vilanova+i+la+Geltrú"
+            href="https://share.google/sLiODzooFdHOycLnw"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2"

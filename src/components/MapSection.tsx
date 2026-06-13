@@ -60,8 +60,7 @@ const MapSection = () => (
             href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2"
-          >
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover:opacity-90 transition-opacity w-fit mt-2">
             <MapPin size={16} />
             Cómo llegar
           </a>

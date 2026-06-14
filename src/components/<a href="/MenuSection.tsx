@@ -51,10 +51,9 @@ const MenuSection = () => (
   <section id="carta" className="py-24 bg-foreground">
     <div className="container px-6">
       <div className="text-center mb-16">
-        <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium">Carta</p>
-        <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">Lo que hacemos bien</h2>
-        <p className="text-muted-foreground mt-3 text-sm">Pedir en barra · Carta completa</p>
-      </div>
+       <p className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 font-medium">Carta</p>
+        <h2 className="font-display text-3xl md:text-4xl font-semibold text-white">Lo que hacemos bien</h2>
+   <p className="text-white/60 mt-3 text-sm">Pedir en barra · Carta completa</p>
       <div className="grid md:grid-cols-3 gap-6">
         {categories.map((cat) => (
           <div key={cat.title} className="bg-card rounded-2xl overflow-hidden shadow-sm border border-border/40 hover:shadow-md transition-shadow">
@@ -80,7 +79,8 @@ const MenuSection = () => (
           </div>
         ))}
       </div>
-      <a href="/Carta.pdf" className="block mx-auto mt-8 w-fit px-6 py-3 rounded-full bg-foreground text-background font-semibold">Ver carta completa</a>      <p className="text-center text-xs text-muted-foreground mt-8">En cas d'al·lèrgies, consulta amb el personal · En caso de alergias, consulta con el personal</p>
+      <a href="/Carta.pdf" target="_blank" rel="noopener noreferrer" className="block mx-auto mt-8 w-fit px-6 py-3 rounded-full bg-white text-foreground font-semibold">Ver carta completa</a>
+<p className="text-center text-xs text-white/60 mt-8">En cas d'al·lèrgies, consulta amb el personal · En caso de alergias, consulta con el personal</p>
     </div>
   </section>
 );

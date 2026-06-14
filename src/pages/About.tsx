@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import aboutImg from "@/assets/about.jpg";
 import terraceImg from "@/assets/terrace.jpg";
 import interiorImg from "@/assets/restaurant-interior.jpg";
-import facadeImg from "@/assets/restaurant-facade.jpg";
+import facadeImg from "@/assets/Interior.png";
 import tableImg from "@/assets/restaurant-table.jpg";
 
 const values = [

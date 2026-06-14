@@ -1,7 +1,7 @@
 import { Coffee, UtensilsCrossed, Cake } from "lucide-react";
-import food1 from "@/assets/cafes.jpg";
-import food2 from "@/assets/brunch.jpg";
-import food3 from "@/assets/food3.jpg";
+import food1 from "@/assets/bunch.jpg";
+import food2 from "@/assets/photo1.jpg";
+import food3 from "@/assets/cafes.jpg";
 
 const categories = [
   {

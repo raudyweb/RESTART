@@ -38,7 +38,7 @@ const About = () => {
         <img src={facadeImg} alt="Fachada Restart Coffee" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
         <div className="relative z-10 container px-6 pb-14">
-          <p className="text-white/70 text-xs tracking-[0.35em] uppercase mb-3 font-medium"></p>
+          <p className="text-white/70 text-xs tracking-[0.35em] uppercase mb-3 font-medium">Conócenos más</p>
           <h1 className="font-display text-4xl md:text-6xl font-semibold text-white leading-tight max-w-2xl">Sobre Nosotros</h1>
         </div>
       </section>

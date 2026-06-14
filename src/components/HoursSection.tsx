@@ -1,5 +1,5 @@
 import { Clock } from "lucide-react";
-import terraceImg from "@/assets/terrace.jpg";
+import terraceImg from "@/assets/Interior.png";
 
 const schedule = [
   { days: "Dilluns", hours: "8:30 – 13:00", closed: false },

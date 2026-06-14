@@ -124,17 +124,15 @@ const About = () => (
       <div className="container px-6 max-w-xl mx-auto">
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">¿Te animás a venir?</h2>
         <p className="text-muted-foreground mb-8">Estamos abiertos cada día. Sin reserva, sin protocolo. Solo ven.</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-center">
             
-              href="/carta"
-              className="px-8 py-3.5 rounded-full bg-foreground text-white font-semibold hover:opacity-90 transition-opacity text-sm"
-            >
+              <a href="/carta">
+              <a className="px-8 py-3.5 rounded-full bg-foreground text-white font-semibold hover:opacity-90 transition-opacity text-sm">
               Ver la carta
             </a>
             
-              href="/#visita"
-              className="px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-medium hover:border-foreground transition-colors text-sm"
-            >
+              <a href="/#visita"
+              className="px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-medium hover:border-foreground transition-colors text-sm">
               Cómo llegar
             </a>
           </div>

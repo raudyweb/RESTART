@@ -3,47 +3,50 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     text: "El mejor café de Vilanova i la Geltrú. El lugar es muy acogedor, la presentación exquisita y el trato inmejorable. ¡Lo recomiendo!",
-    author: "Cliente de Tripadvisor",
+    author: "Marta G.",
+    rating: 5,
   },
   {
     text: "Brunch delicioso y café excelente. Ambiente tranquilo, terraza muy agradable y un servicio rápido, siempre con una sonrisa.",
-    author: "Cliente de Tripadvisor",
+    author: "Jordi P.",
+    rating: 5,
   },
   {
     text: "De lo mejorcito que hay por la zona. Se come de maravilla y el servicio no puede ser mejor. No podéis dejar de venir.",
-    author: "Cliente de Tripadvisor",
+    author: "Laura S.",
+    rating: 5,
   },
 ];
 
 const ReviewsSection = () => {
   return (
-    <section id="opiniones" className="py-20 md:py-28 bg-primary text-primary-foreground">
+    <section id="opiniones" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-gold-light font-body text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="text-muted-foreground font-body text-sm tracking-[0.3em] uppercase mb-4">
             Opiniones
           </p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
             Lo que dicen nuestros clientes
           </h2>
-          <p className="text-primary-foreground/60 mt-4 text-sm">4.8 ★ · +180 reseñas en Google</p>
+          <p className="text-muted-foreground mt-4 text-sm">4.8 ★ · +180 reseñas en Google</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-primary-foreground/5 border border-primary-foreground/10 rounded-xl p-8 hover:bg-primary-foreground/10 transition-all duration-500 hover:-translate-y-1 group"
+              className="bg-card border border-border rounded-xl p-8 hover:shadow-md transition-all duration-500 hover:-translate-y-1 group"
             >
-              <Quote size={32} className="text-gold/60 mb-4 group-hover:text-gold transition-colors" />
-              <p className="text-primary-foreground/90 text-base leading-relaxed mb-6 italic font-display">
+              <Quote size={32} className="text-primary/40 mb-4 group-hover:text-primary transition-colors" />
+              <p className="text-foreground/90 text-base leading-relaxed mb-6 italic font-display">
                 "{review.text}"
               </p>
-              <div className="flex items-center gap-2 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={14} className="fill-gold text-gold" />
+              <div className="flex items-center gap-1 mb-2">
+                {[...Array(review.rating)].map((_, i) => (
+                  <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <p className="text-gold-light font-semibold text-sm">
+              <p className="text-primary font-semibold text-sm">
                 — {review.author}
               </p>
             </div>

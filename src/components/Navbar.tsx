@@ -4,7 +4,7 @@ import logoImg from "@/assets/restart-logoo.png";
 
 const Navbar = () => {
 const [menuOpen,setMenuOpen]=useState(false);
- const links=[
+const links=[
   {label:"Carta",href:"/Carta.pdf"}, // MENÚ PDF: sustituye /menu.pdf por la ruta del PDF definitivo cuando lo subas
   {label:"Horarios",href:"/#horarios"},
   {label:"Visítanos",href:"/#visita"},

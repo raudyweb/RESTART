@@ -2,11 +2,11 @@ import { Clock } from "lucide-react";
 import terraceImg from "@/assets/Exterior.png";
 
 const schedule = [
-  { days: "Dilluns", hours: "8:30 – 13:00", closed: false },
-  { days: "Dimarts a Dijous", hours: "8:30 – 16:00", closed: false },
-  { days: "Divendres", hours: "8:30 – 19:30", closed: false },
-  { days: "Dissabte", hours: "9:00 – 15:00", closed: false },
-  { days: "Diumenge i Festius", hours: "Tancat", closed: true },
+  { days: "Lunes", hours: "8:30 – 13:00", closed: false },
+  { days: "Martes a Jueves", hours: "8:30 – 16:00", closed: false },
+  { days: "Viernes", hours: "8:30 – 19:30", closed: false },
+  { days: "Sábado", hours: "9:00 – 15:00", closed: false },
+  { days: "Domingo y Festivos", hours: "Cerrado", closed: true },
 ];
 
 const HoursSection = () => (
@@ -14,12 +14,12 @@ const HoursSection = () => (
     <div className="container px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-          <img src={terraceImg} alt="Poke Bowl de Re·Start Coffee" className="w-full h-full object-cover" loading="lazy" />
+          <img src={terraceImg} alt="Terraza de Re·Start Coffee" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div>
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium"></p>
           <h2 className="font-display text-3xl md:text-4xl font-semibold mb-8 text-foreground leading-snug">
-            Horaris
+            Horarios
           </h2>
           <div className="space-y-1">
             {schedule.map((item) => (
@@ -34,7 +34,7 @@ const HoursSection = () => (
               </div>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground mt-6">Els horaris poden variar en festius especials.</p>
+          <p className="text-xs text-muted-foreground mt-6">Los horarios pueden variar en festivos especiales.</p>
         </div>
       </div>
     </div>

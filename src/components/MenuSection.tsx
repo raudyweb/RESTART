@@ -5,10 +5,10 @@ import food3 from "@/assets/cafes.jpg";
 
 const categories = [
   {
-    title: "Cafès & Begudes",
+    title: "Cafés & Bebidas",
     icon: <Coffee size={20} />,
     img: food3,
-    imgAlt: "Preparació artesana al forn",
+    imgAlt: "Preparación artesana en barra",
     items: [
       { name: "Espresso / Especial", price: "1,8€ / 2,3€" },
       { name: "Flat White", price: "3,8€" },
@@ -25,24 +25,24 @@ const categories = [
     imgAlt: "Poke Bowl de temporada",
     items: [
       { name: "Avo-Lima", price: "7,9€" },
-      { name: "Marina (crema, espinacs, salmó)", price: "10,9€" },
-      { name: "Nido (alvocat, remolatxa, ous)", price: "10,9€" },
-      { name: "Noruega (salmó, ous de lump)", price: "13,9€" },
+      { name: "Marina (queso crema, espinacas, salmón)", price: "10,9€" },
+      { name: "Nido (aguacate, remolacha, huevos)", price: "10,9€" },
+      { name: "Noruega (salmón, huevas de lumpo)", price: "13,9€" },
       { name: "Poke Bowl", price: "desde 13,5€" },
-      { name: "Pa sense gluten disponible", price: "+2€" },
+      { name: "Pan sin gluten disponible", price: "+2€" },
     ],
   },
   {
-    title: "Pastisseria & Dolços",
+    title: "Pastelería & Dulces",
     icon: <Cake size={20} />,
     img: food2,
-    imgAlt: "Pastisseria artesana del Re·Start",
+    imgAlt: "Pastelería artesana de Re·Start",
     items: [
-      { name: "Cookies artesanes", price: "" },
-      { name: "Panets de matcha i pistachos", price: "" },
-      { name: "Panets de mantequilla", price: "" },
-      { name: "Pancakes dolços", price: "" },
-      { name: "Tartes de temporada", price: "" },
+      { name: "Cookies artesanas", price: "" },
+      { name: "Bollos de matcha y pistacho", price: "" },
+      { name: "Bollos de mantequilla", price: "" },
+      { name: "Pancakes dulces", price: "" },
+      { name: "Tartas de temporada", price: "" },
     ],
   },
 ];
@@ -81,7 +81,7 @@ const MenuSection = () => (
         ))}
       </div>
       <a href="/Carta.pdf" target="_blank" rel="noopener noreferrer" className="block mx-auto mt-8 w-fit px-6 py-3 rounded-full bg-white text-foreground font-semibold">Ver carta completa</a>
-      <p className="text-center text-xs text-white/60 mt-8">En cas d'al·lèrgies, consulta amb el personal · En caso de alergias, consulta con el personal</p>
+      <p className="text-center text-xs text-white/60 mt-8">En caso de alergias, consulta con el personal</p>
     </div>
   </section>
 );

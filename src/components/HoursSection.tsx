@@ -10,31 +10,31 @@ const schedule = [
 ];
 
 const HoursSection = () => (
-  <section id="horarios" className="py-24 bg-background">
+  <section id="horarios" className="py-24 bg-foreground">
     <div className="container px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
           <img src={terraceImg} alt="Terraza de Re·Start Coffee" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div>
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium"></p>
-          <h2 className="font-display text-3xl md:text-4xl font-semibold mb-8 text-foreground leading-snug">
-            Horarios
+          <p className="text-xs tracking-[0.3em] uppercase text-white/50 mb-4 font-medium">Horarios</p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold mb-8 text-white leading-snug">
+            Te esperamos aquí
           </h2>
           <div className="space-y-1">
             {schedule.map((item) => (
-              <div key={item.days} className={`flex items-center justify-between py-3.5 border-b border-border/50 ${item.closed ? "opacity-40" : ""}`}>
-                <span className="flex items-center gap-3 text-sm text-foreground">
-                  <Clock size={14} className="text-muted-foreground" />
+              <div key={item.days} className={`flex items-center justify-between py-3.5 border-b border-white/10 ${item.closed ? "opacity-40" : ""}`}>
+                <span className="flex items-center gap-3 text-sm text-white/90">
+                  <Clock size={14} className="text-white/50" />
                   {item.days}
                 </span>
-                <span className={`text-sm font-semibold ${item.closed ? "text-muted-foreground" : "text-foreground"}`}>
+                <span className={`text-sm font-semibold ${item.closed ? "text-white/50" : "text-white"}`}>
                   {item.hours}
                 </span>
               </div>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground mt-6">Los horarios pueden variar en festivos especiales.</p>
+          <p className="text-xs text-white/50 mt-6">Los horarios pueden variar en festivos especiales.</p>
         </div>
       </div>
     </div>

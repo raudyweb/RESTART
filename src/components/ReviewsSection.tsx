@@ -2,16 +2,16 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    text: "Local típic de Vilanova, bon ambient i servei. Moltes opcions per menjar i beure. De 10.",
-    author: "Manel R.C.",
+    text: "El mejor café de Vilanova i la Geltrú. El lugar es muy acogedor, la presentación exquisita y el trato inmejorable. ¡Lo recomiendo!",
+    author: "Cliente de Tripadvisor",
   },
   {
-    text: "Autèntic ambient de celler, ideal per venir a fer una copa amb una tapa d'embotit, formatge, anxoves i pa amb tomàquet. Tot a molt bon preu. Un lloc collonut!",
-    author: "Marc R.",
+    text: "Brunch delicioso y café excelente. Ambiente tranquilo, terraza muy agradable y un servicio rápido, siempre con una sonrisa.",
+    author: "Cliente de Tripadvisor",
   },
   {
-    text: "El menjar fantàstic, com sempre. El xató de Vilanova i les tapes de pernil, cecina i anxoves. Sempre que anem a Vilanova cau una visita al Puput!",
-    author: "Júlia Plana Soria",
+    text: "De lo mejorcito que hay por la zona. Se come de maravilla y el servicio no puede ser mejor. No podéis dejar de venir.",
+    author: "Cliente de Tripadvisor",
   },
 ];
 
@@ -26,8 +26,8 @@ const ReviewsSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold">
             Lo que dicen nuestros clientes
           </h2>
+          <p className="text-primary-foreground/60 mt-4 text-sm">4.8 ★ · +180 reseñas en Google</p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {reviews.map((review, index) => (
             <div

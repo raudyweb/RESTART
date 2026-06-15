@@ -10,7 +10,6 @@ const links=[
   {label:"Visítanos",href:"/#visita"},
   {label:"Sobre Nosotros",href:"/sobre-nosotros"}
  ];
- ];
  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background shadow">
  <div className="container flex items-center justify-between px-6 py-4"><a href="/" className="flex items-center gap-3"><img src={logoImg} alt="Restart Coffee" className="w-8 h-8 object-contain"/><span className="font-display text-lg font-semibold">Restart Coffee</span></a>
  <div className="hidden md:flex items-center gap-8">{links.map(l=><a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-foreground">{l.label}</a>)}<a href="tel:+34621306720" className="px-5 py-2 rounded-full bg-foreground text-background">Llámanos</a></div>

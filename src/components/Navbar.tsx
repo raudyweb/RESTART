@@ -6,6 +6,7 @@ const Navbar = () => {
 const [menuOpen,setMenuOpen]=useState(false);
 const links=[
   {label:"Carta",href:"/Carta.pdf"}, // MENÚ PDF: sustituye /menu.pdf por la ruta del PDF definitivo cuando lo subas
+  {label:"Opiniones",href:"/#opiniones"},
   {label:"Horarios",href:"/#horarios"},
   {label:"Visítanos",href:"/#visita"},
   {label:"Sobre Nosotros",href:"/sobre-nosotros"}

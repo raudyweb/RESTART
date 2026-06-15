@@ -5,18 +5,25 @@ const ScrollToHash = () => {
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      // Esperamos un instante a que React termine de renderizar la sección
-      const timeout = setTimeout(() => {
-        const el = document.querySelector(hash);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-      return () => clearTimeout(timeout);
-    } else {
+    if (!hash) {
       window.scrollTo(0, 0);
+      return;
     }
+
+    let attempts = 0;
+    const maxAttempts = 30; // ~3 segundos máximo
+
+    const tryScroll = () => {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      } else if (attempts < maxAttempts) {
+        attempts++;
+        setTimeout(tryScroll, 100);
+      }
+    };
+
+    tryScroll();
   }, [hash]);
 
   return null;

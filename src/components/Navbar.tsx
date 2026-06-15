@@ -5,10 +5,11 @@ import logoImg from "@/assets/restart-logoo.png";
 const Navbar = () => {
 const [menuOpen,setMenuOpen]=useState(false);
  const links=[
-  {label:"Sobre Nosotros",href:"/sobre-nosotros"},
   {label:"Carta",href:"/Carta.pdf"}, // MENÚ PDF: sustituye /menu.pdf por la ruta del PDF definitivo cuando lo subas
   {label:"Horarios",href:"/#horarios"},
-  {label:"Visítanos",href:"/#visita"}
+  {label:"Visítanos",href:"/#visita"},
+  {label:"Sobre Nosotros",href:"/sobre-nosotros"}
+ ];
  ];
  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background shadow">
  <div className="container flex items-center justify-between px-6 py-4"><a href="/" className="flex items-center gap-3"><img src={logoImg} alt="Restart Coffee" className="w-8 h-8 object-contain"/><span className="font-display text-lg font-semibold">Restart Coffee</span></a>

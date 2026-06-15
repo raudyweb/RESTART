@@ -1,6 +1,6 @@
-# Celler Cal Puput — v1
+# RESTART COFFEE — v1
 
-Web oficial del restaurante Celler Cal Puput, Vilanova i la Geltrú.
+Web oficial del restaurante RESTART COFFEE, Vilanova i la Geltrú.
 
 Desarrollado por **RAUDY**.
 

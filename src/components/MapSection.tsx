@@ -44,7 +44,7 @@ const MapSection = () => (
             </div>
             <div>
               <h3 className="font-display text-lg font-semibold mb-1">Email</h3>
-             <a href="https://mail.google.com/mail/?view=cm&amp;to=rscafevng@gmail.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">rscafevng@gmail.com</a>
+             <a href="https://mail.google.com/mail/u/0/#compose?to=rscafevng@gmail.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">rscafevng@gmail.com</a>
             </div>
           </div>
           <div className="flex items-start gap-4">

@@ -92,6 +92,10 @@ const About = () => {
                 <p className="text-white/70 leading-relaxed">Hoy, RE-START es mucho más que una cafetería. Con el tiempo hemos ampliado nuestra actividad con nuevos proyectos: dos puntos de venta en el Camping Vilanova Park y nuestro propio obrador artesanal, MACU BAKERY Gluten Free.</p>
               </div>
             </FadeIn>
+            <div className="flex flex-col sm:flex-row gap-3 mt-8">
+  <a href="/food-truck" className="px-6 py-3 rounded-full bg-white text-foreground font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm text-center">Food Truck Camping Vilanova Park</a>
+  <a href="/macu-bakery" className="px-6 py-3 rounded-full border border-white/30 text-white font-medium hover:border-white hover:scale-105 transition-all duration-300 text-sm text-center">MACU BAKERY Gluten Free</a>
+</div>
           </div>
         </div>
       </section>

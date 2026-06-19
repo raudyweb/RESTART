@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
-import Carta from "./public/Carta.pdf";
+import Carta from "./pages/Carta.tsx";
 import FoodTruck from "./pages/FoodTruck.tsx";
 import MacuBakery from "./pages/MacuBakery.tsx";
 import NotFound from "./pages/NotFound.tsx";

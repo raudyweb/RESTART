@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImg from "@/assets/about.jpg";
-import terraceImg from "@/assets/terrace.jpg";
+import terraceImg from "@/assets/Interior.jpg";
 import interiorImg from "@/assets/restaurant-interior.jpg";
 import facadeImg from "@/assets/restaurant-facade.jpg";
 import tableImg from "@/assets/restaurant-table.jpg";
@@ -54,8 +54,8 @@ const About = () => {
         <img src={facadeImg} alt="Fachada Restart Coffee" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[8000ms] ${heroLoaded ? "scale-105" : "scale-100"}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
         <div className="relative z-10 container px-6 pb-14">
-          <p className={`text-white/70 text-xs tracking-[0.35em] uppercase mb-3 font-medium transition-all duration-700 delay-300 ${heroLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>Sobre Nosotros</p>
-          <h1 className={`font-display text-4xl md:text-6xl font-semibold text-white leading-tight max-w-2xl transition-all duration-700 delay-500 ${heroLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>Una familia apasionada<br />por la hostelería</h1>
+          <p className={`text-white/70 text-xs tracking-[0.35em] uppercase mb-3 font-medium transition-all duration-700 delay-300 ${heroLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>Conócenos más</p>
+          <h1 className={`font-display text-4xl md:text-6xl font-semibold text-white leading-tight max-w-2xl transition-all duration-700 delay-500 ${heroLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>Sobre Nosotros</h1>
         </div>
       </section>
 

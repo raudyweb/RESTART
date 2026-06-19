@@ -45,13 +45,6 @@ const About = () => {
     return () => clearTimeout(t);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1));
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -86,7 +79,7 @@ const About = () => {
         <div className="container px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <FadeIn direction="left">
-              <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+              <div className="rounded-2xl overflow-hidden w-full md:max-w-md mx-auto aspect-[4/3]">
                 <img src={aboutImg} alt="Restart Coffee" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
             </FadeIn>
@@ -117,7 +110,7 @@ const About = () => {
               </div>
             </FadeIn>
             <FadeIn direction="right">
-              <div className="order-1 md:order-2 rounded-2xl overflow-hidden aspect-[4/3]">
+              <div className="order-1 md:order-2 rounded-2xl overflow-hidden w-full md:max-w-md mx-auto aspect-[4/3]">
                 <img src={terraceImg} alt="Terraza Restart Coffee" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
             </FadeIn>
@@ -159,34 +152,31 @@ const About = () => {
             </div>
           </FadeIn>
           <FadeIn delay={100}>
-            <div
-              className="relative rounded-2xl overflow-hidden aspect-[16/9]"
-              onTouchStart={(e) => {
-                const touch = e.touches[0];
-                (e.currentTarget as any)._touchStartX = touch.clientX;
-              }}
-              onTouchEnd={(e) => {
-                const startX = (e.currentTarget as any)._touchStartX ?? 0;
-                const endX = e.changedTouches[0].clientX;
-                const diff = startX - endX;
-                if (Math.abs(diff) > 40) {
-                  if (diff > 0) {
-                    setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1));
-                  } else {
-                    setActiveSlide(i => (i === 0 ? images.length - 1 : i - 1));
+            <div className="max-w-3xl mx-auto">
+              <div
+                className="relative rounded-2xl overflow-hidden aspect-[16/9]"
+                onTouchStart={(e) => {
+                  (e.currentTarget as any)._touchStartX = e.touches[0].clientX;
+                }}
+                onTouchEnd={(e) => {
+                  const startX = (e.currentTarget as any)._touchStartX ?? 0;
+                  const diff = startX - e.changedTouches[0].clientX;
+                  if (Math.abs(diff) > 40) {
+                    if (diff > 0) setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1));
+                    else setActiveSlide(i => (i === 0 ? images.length - 1 : i - 1));
                   }
-                }
-              }}
-            >
-              {images.map((src, i) => (
-                <img key={i} src={src} alt={`Espacio ${i + 1}`} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${activeSlide === i ? "opacity-100" : "opacity-0"}`} />
-              ))}
-              <button onClick={() => setActiveSlide(i => (i === 0 ? images.length - 1 : i - 1))} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm text-lg hover:scale-110">&#8592;</button>
-              <button onClick={() => setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1))} className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm text-lg hover:scale-110">&#8594;</button>
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                {images.map((_, i) => (
-                  <button key={i} onClick={() => setActiveSlide(i)} className={`transition-all duration-300 rounded-full ${activeSlide === i ? "bg-white w-6 h-2" : "bg-white/40 w-2 h-2"}`} />
+                }}
+              >
+                {images.map((src, i) => (
+                  <img key={i} src={src} alt={`Espacio ${i + 1}`} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${activeSlide === i ? "opacity-100" : "opacity-0"}`} />
                 ))}
+                <button onClick={() => setActiveSlide(i => (i === 0 ? images.length - 1 : i - 1))} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm text-lg hover:scale-110">&#8592;</button>
+                <button onClick={() => setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1))} className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm text-lg hover:scale-110">&#8594;</button>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                  {images.map((_, i) => (
+                    <button key={i} onClick={() => setActiveSlide(i)} className={`transition-all duration-300 rounded-full ${activeSlide === i ? "bg-white w-6 h-2" : "bg-white/40 w-2 h-2"}`} />
+                  ))}
+                </div>
               </div>
             </div>
           </FadeIn>

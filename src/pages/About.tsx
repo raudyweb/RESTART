@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImg from "@/assets/about.jpg";
-import terraceImg from "@/assets/Interior.jpg";
+import terraceImg from "@/assets/Interior.png";
 import interiorImg from "@/assets/restaurant-interior.jpg";
 import facadeImg from "@/assets/restaurant-facade.jpg";
 import tableImg from "@/assets/restaurant-table.jpg";

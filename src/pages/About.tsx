@@ -159,7 +159,25 @@ const About = () => {
             </div>
           </FadeIn>
           <FadeIn delay={100}>
-            <div className="relative rounded-2xl overflow-hidden aspect-[16/9]">
+            <div
+              className="relative rounded-2xl overflow-hidden aspect-[16/9]"
+              onTouchStart={(e) => {
+                const touch = e.touches[0];
+                (e.currentTarget as any)._touchStartX = touch.clientX;
+              }}
+              onTouchEnd={(e) => {
+                const startX = (e.currentTarget as any)._touchStartX ?? 0;
+                const endX = e.changedTouches[0].clientX;
+                const diff = startX - endX;
+                if (Math.abs(diff) > 40) {
+                  if (diff > 0) {
+                    setActiveSlide(i => (i === images.length - 1 ? 0 : i + 1));
+                  } else {
+                    setActiveSlide(i => (i === 0 ? images.length - 1 : i - 1));
+                  }
+                }
+              }}
+            >
               {images.map((src, i) => (
                 <img key={i} src={src} alt={`Espacio ${i + 1}`} className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${activeSlide === i ? "opacity-100" : "opacity-0"}`} />
               ))}

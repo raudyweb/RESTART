@@ -5,8 +5,7 @@ import logoImg from "@/assets/restart-logoo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
-
+ 
   const links = [
     { label: "Carta", href: "/Carta.pdf" },
     { label: "Opiniones", href: "/#opiniones" },

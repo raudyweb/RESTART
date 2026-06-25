@@ -5,7 +5,7 @@ import logoImg from "@/assets/restart-logoo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
- 
+
   const links = [
     { label: "Carta", href: "/Carta.pdf" },
     { label: "Opiniones", href: "/#opiniones" },
@@ -80,44 +80,49 @@ const Navbar = () => {
           {menuOpen ? <X /> : <Menu />}
         </button>
       </div>
-{/* Mobile */}
-{menuOpen && (
-  <div className="md:hidden bg-background px-6 pb-6 flex flex-col gap-4">
-    {links.map((l) => (
-      <a
-        key={l.href}
-        href={l.href}
-        onClick={() => setMenuOpen(false)}
-      >
-        {l.label}
-      </a>
-    ))}
 
-    <div className="flex flex-col gap-2">
-      <Link
-        to="/sobre-nosotros"
-        onClick={() => setMenuOpen(false)}
-        className="font-medium"
-      >
-        Sobre Nosotros
-      </Link>
+      {/* Mobile */}
+      {menuOpen && (
+        <div className="md:hidden bg-background px-6 pb-6 flex flex-col gap-4">
+          {links.map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {l.label}
+            </a>
+          ))}
 
-      <div className="ml-4 flex flex-col gap-2">
-        <Link
-          to="/food-truck"
-          onClick={() => setMenuOpen(false)}
-        >
-          Food Truck
-        </Link>
+          <div className="flex flex-col gap-2">
+            <Link
+              to="/sobre-nosotros"
+              onClick={() => setMenuOpen(false)}
+              className="font-medium"
+            >
+              Sobre Nosotros
+            </Link>
 
-        <Link
-          to="/macu-bakery"
-          onClick={() => setMenuOpen(false)}
-        >
-          Macu Bakery
-        </Link>
-      </div>
-    </div>
-  </div>
-)}
-     
+            <div className="ml-4 flex flex-col gap-2">
+              <Link
+                to="/food-truck"
+                onClick={() => setMenuOpen(false)}
+              >
+                Food Truck
+              </Link>
+
+              <Link
+                to="/macu-bakery"
+                onClick={() => setMenuOpen(false)}
+              >
+                Macu Bakery
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;

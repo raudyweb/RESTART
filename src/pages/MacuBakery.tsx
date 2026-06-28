@@ -143,15 +143,31 @@ const MacuBakery = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-background text-center">
-        <div className="container px-6 max-w-xl mx-auto">
+      {/* MAPA */}
+      <section className="py-16 bg-background">
+        <div className="container px-6">
           <FadeIn>
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">¿Quieres saber más?</h2>
-            <p className="text-muted-foreground mb-8">Visita la web de MACU BAKERY para descubrir toda nuestra oferta de repostería sin gluten.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://www.macuglutenfree.com/" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 rounded-full bg-foreground text-white font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm">Visitar MACU BAKERY</a>
-              <a href="/sobre-nosotros" className="px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-medium hover:border-foreground hover:scale-105 transition-all duration-300 text-sm">Conoce RE-START</a>
+            <div className="text-center mb-12">
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 font-medium">Dónde estamos</p>
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">Encuéntranos</h2>
+              <p className="text-muted-foreground mt-3 text-sm max-w-xl mx-auto">Visítanos en nuestro obrador y descubre de primera mano nuestra repostería sin gluten.</p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 max-w-4xl mx-auto">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.9201476357885!2d1.7255711999999996!3d41.2235106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a387fb6cf6d883%3A0xf1f199113b8424a2!2sMACU%20Gluten%20Free%20Bakery!5e0!3m2!1ses!2ses!4v1782665049933!5m2!1ses!2ses"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Ubicación MACU BAKERY"
+              />
+            </div>
+            <div className="text-center mt-6">
+              <a href="https://maps.app.goo.gl/DHLKVEp9WPZuMdg8A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-white font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm">Cómo llegar</a>
             </div>
           </FadeIn>
         </div>

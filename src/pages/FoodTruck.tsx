@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import camping1 from "@/assets/Camping1.jpg";
 import camping2 from "@/assets/Camping2.jpg";
 import camping3 from "@/assets/Camping3.jpg";
-import { MapPin } from "lucide-react";
 
 const useInView = (threshold = 0.15) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -87,8 +86,7 @@ const FoodTruck = () => {
                 <p className="text-xs tracking-[0.3em] uppercase text-white/50 mb-4 font-medium">Dónde estamos</p>
                 <h2 className="font-display text-3xl md:text-4xl font-semibold text-white mb-6 leading-snug">En el corazón<br />del Camping Vilanova Park</h2>
                 <p className="text-white/70 leading-relaxed mb-4">El Camping Vilanova Park es uno de los campings más grandes y completos de Cataluña, situado a pocos minutos de la playa y del centro de Vilanova i la Geltrú.</p>
-                <p className="text-white/70 leading-relaxed mb-6">Nuestros dos puntos de venta están estratégicamente ubicados dentro del recinto para dar servicio tanto a los campistas de parcela como a los de bungalow y mobilhome.</p>
-                <a href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-2 px-6 py-3 rounded-full bg-white text-foreground font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm"><MapPin size={16} />Cómo llegar al camping</a>
+                <p className="text-white/70 leading-relaxed">Nuestros dos puntos de venta están estratégicamente ubicados dentro del recinto para dar servicio tanto a los campistas de parcela como a los de bungalow y mobilhome.</p>
               </div>
             </FadeIn>
           </div>
@@ -140,15 +138,31 @@ const FoodTruck = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-background text-center">
-        <div className="container px-6 max-w-xl mx-auto">
+      {/* MAPA */}
+      <section className="py-16 bg-background">
+        <div className="container px-6">
           <FadeIn>
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">¿Vienes al camping?</h2>
-            <p className="text-muted-foreground mb-8">Pásate a vernos. Estamos ahí para que tu estancia empiece con un buen café.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/sobre-nosotros" className="px-8 py-3.5 rounded-full bg-foreground text-white font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm">Conoce RE-START</a>
-              <a href="/#visita" className="px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-medium hover:border-foreground hover:scale-105 transition-all duration-300 text-sm">Visítanos en Vilanova</a>
+            <div className="text-center mb-12">
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3 font-medium">Dónde estamos</p>
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">Encuéntranos en el camping</h2>
+              <p className="text-muted-foreground mt-3 text-sm max-w-xl mx-auto">Estamos dentro del Camping Vilanova Park, uno de los campings más completos de Cataluña.</p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 max-w-4xl mx-auto">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.5293779537687!2d1.6928816!3d41.2320253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4986a70234dd9%3A0xe7932b446d313350!2sVilanova%20Park!5e0!3m2!1ses!2ses!4v1782665372822!5m2!1ses!2ses"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Ubicación Camping Vilanova Park"
+              />
+            </div>
+            <div className="text-center mt-6">
+              <a href="https://maps.app.goo.gl/BL8ZWwjTquyxNPD16" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-white font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm">Cómo llegar</a>
             </div>
           </FadeIn>
         </div>

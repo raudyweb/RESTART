@@ -20,7 +20,7 @@ const reviews = [
 
 const ReviewsSection = () => {
   return (
-    <section id="opiniones" className="py-20 md:py-28 bg-background">
+    <section id="opiniones" className="py-20 md:py-28 bg-[#efe6d4]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-muted-foreground font-body text-sm tracking-[0.3em] uppercase mb-4">

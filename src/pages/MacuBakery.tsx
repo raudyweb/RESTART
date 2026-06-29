@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import macuLogo from "@/assets/MACULOGO.jpg";
+import macuLogo from "@/assets/MACULOGO.png";
 import macuObrador1 from "@/assets/MACU-OBRADOR1.jpg";
 import macuObrador2 from "@/assets/MACU-OBRADOR2.jpg";
 import macuObrador3 from "@/assets/MACU-OBRADOR3.jpg";

@@ -64,7 +64,7 @@ const MacuBakery = () => {
       <section className="py-20 bg-background">
         <div className="container px-6 max-w-3xl mx-auto text-center">
           <FadeIn>
-            <img src={macuLogo} alt="MACU BAKERY Logo" className="w-24 h-24 object-contain mx-auto mb-6 rounded-full" />
+            <img src={macuLogo} alt="MACU BAKERY Logo" className="w-24 h-24 object-contain mx-auto mb-6" />
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4 font-medium">Nuestro obrador</p>
             <p className="font-display text-xl md:text-2xl leading-relaxed text-foreground/80 italic mb-6">"Repostería artesanal sin gluten, elaborada con el mismo compromiso por la calidad que define a RE-START desde el primer día."</p>
             <div className="w-12 h-0.5 bg-primary mx-auto mb-8" />

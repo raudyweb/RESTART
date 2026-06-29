@@ -69,12 +69,11 @@ const MenuSection = () => (
                 <h3 className="font-display text-lg font-semibold">{cat.title}</h3>
               </div>
               <ul className="space-y-2.5">
-                {cat.items.map((item) => (
-                  <li key={item.name} className="flex items-center justify-between gap-2 text-sm">
-                    <span className="text-muted-foreground">{item.name}</span>
-                    {item.price && <span className="font-medium text-foreground shrink-0">{item.price}</span>}
-                  </li>
-                ))}
+{cat.items.map((item) => (
+  <li key={item.name} className="text-sm text-muted-foreground">
+    {item.name}
+  </li>
+))}
               </ul>
             </div>
           </div>

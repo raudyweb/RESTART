@@ -20,9 +20,9 @@ const FadeIn = ({ children, delay = 0, direction = "up" }: { children: React.Rea
   const { ref, inView } = useInView();
   const translate = direction === "up" ? "translate-y-8" : direction === "left" ? "-translate-x-8" : direction === "right" ? "translate-x-8" : "";
   return (
-    <div ref={ref} style={{ transitionDelay: `${delay}ms` }} className={`transition-all duration-700 ${inView ? "opacity-100 translate-x-0 translate-y-0" : `opacity-0 ${translate}`}`}>
-      {children}
-    </div>
+<div ref={ref}>
+  {children}
+</div>
   );
 };
 

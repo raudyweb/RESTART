@@ -4,10 +4,12 @@ import About from "./pages/About.tsx";
 import FoodTruck from "./pages/FoodTruck.tsx";
 import MacuBakery from "./pages/MacuBakery.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToHash from "./components/ScrollToHash";
 
 const App = () => (
-  <BrowserRouter>
-    <Routes>
+<BrowserRouter>
+  <ScrollToHash />
+  <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/sobre-nosotros" element={<About />} />
       <Route 

@@ -9,41 +9,41 @@ const categories = [
     icon: <Coffee size={20} />,
     img: food3,
     imgAlt: "Preparación artesana en barra",
-    items: [
-      { name: "Espresso / Especial", price: "1,8€ / 2,3€" },
-      { name: "Flat White", price: "3,8€" },
-      { name: "Matcha Latte", price: "3,7€" },
-      { name: "Iced Filter", price: "4,2€" },
-      { name: "Cold Brew", price: "4,2€" },
-      { name: "Espresso Tonic", price: "4,9€" },
-    ],
+items: [
+  { name: "Café de especialidad" },
+  { name: "Espresso y café filtrado" },
+  { name: "Flat White y Cappuccino" },
+  { name: "Matcha Latte" },
+  { name: "Cold Brew y bebidas frías" },
+  { name: "Bebidas de temporada" },
+],
   },
   {
     title: "Brunch",
     icon: <UtensilsCrossed size={20} />,
     img: food1,
     imgAlt: "Poke Bowl de temporada",
-    items: [
-      { name: "Avo-Lima", price: "7,9€" },
-      { name: "Marina (queso crema, espinacas, salmón)", price: "10,9€" },
-      { name: "Nido (aguacate, remolacha, huevos)", price: "10,9€" },
-      { name: "Noruega (salmón, huevas de lumpo)", price: "13,9€" },
-      { name: "Poke Bowl", price: "desde 13,5€" },
-      { name: "Pan sin gluten disponible", price: "+2€" },
-    ],
+items: [
+  { name: "Brunch artesanal" },
+  { name: "Tostadas gourmet" },
+  { name: "Huevos benedict" },
+  { name: "Bowls saludables" },
+  { name: "Opciones vegetarianas y sin gluten" },
+  { name: "Ingredientes frescos y de temporada" },
+],
   },
   {
     title: "Pastelería & Dulces",
     icon: <Cake size={20} />,
     img: food2,
     imgAlt: "Pastelería artesana de Re·Start",
-    items: [
-      { name: "Cookies artesanas", price: "" },
-      { name: "Bollos de matcha y pistacho", price: "" },
-      { name: "Bollos de mantequilla", price: "" },
-      { name: "Pancakes dulces", price: "" },
-      { name: "Tartas de temporada", price: "" },
-    ],
+items: [
+  { name: "Repostería artesanal" },
+  { name: "Cookies caseras" },
+  { name: "Pancakes" },
+  { name: "Tartas de temporada" },
+  { name: "Elaboración propia de MACU BAKERY" },
+],
   },
 ];
 
@@ -53,7 +53,9 @@ const MenuSection = () => (
       <div className="text-center mb-16">
         <p className="text-xs tracking-[0.3em] uppercase text-white/60 mb-4 font-medium">Carta</p>
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-white">Lo que hacemos bien</h2>
-        <p className="text-white/60 mt-3 text-sm">Pedir en barra · Carta completa</p>
+<p className="text-white/60 mt-3 text-sm">
+  Café de especialidad, brunch y repostería artesanal. Consulta nuestra carta completa en PDF.
+</p>
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {categories.map((cat) => (

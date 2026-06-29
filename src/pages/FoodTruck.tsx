@@ -72,27 +72,6 @@ const FoodTruck = () => {
         </div>
       </section>
 
-      {/* UBICACIÓN */}
-      <section className="py-16 bg-foreground">
-        <div className="container px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <FadeIn direction="left">
-              <div className="rounded-2xl overflow-hidden w-full md:max-w-md mx-auto aspect-[4/3]">
-                <img src={camping2} alt="Camping Vilanova Park" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
-              </div>
-            </FadeIn>
-            <FadeIn direction="right" delay={150}>
-              <div>
-                <p className="text-xs tracking-[0.3em] uppercase text-white/50 mb-4 font-medium">Dónde estamos</p>
-                <h2 className="font-display text-3xl md:text-4xl font-semibold text-white mb-6 leading-snug">En el corazón<br />del Camping Vilanova Park</h2>
-                <p className="text-white/70 leading-relaxed mb-4">El Camping Vilanova Park es uno de los campings más grandes y completos de Cataluña, situado a pocos minutos de la playa y del centro de Vilanova i la Geltrú.</p>
-                <p className="text-white/70 leading-relaxed">Nuestros dos puntos de venta están estratégicamente ubicados dentro del recinto para dar servicio tanto a los campistas de parcela como a los de bungalow y mobilhome.</p>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
       {/* QUÉ OFRECEMOS */}
       <section className="py-20 bg-background">
         <div className="container px-6">
@@ -138,6 +117,27 @@ const FoodTruck = () => {
         </div>
       </section>
 
+      {/* UBICACIÓN */}
+      <section className="py-16 bg-foreground">
+        <div className="container px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <FadeIn direction="left">
+              <div className="rounded-2xl overflow-hidden w-full md:max-w-md mx-auto aspect-[4/3]">
+                <img src={camping2} alt="Camping Vilanova Park" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+            </FadeIn>
+            <FadeIn direction="right" delay={150}>
+              <div>
+                <p className="text-xs tracking-[0.3em] uppercase text-white/50 mb-4 font-medium">Dónde estamos</p>
+                <h2 className="font-display text-3xl md:text-4xl font-semibold text-white mb-6 leading-snug">En el corazón<br />del Camping Vilanova Park</h2>
+                <p className="text-white/70 leading-relaxed mb-4">El Camping Vilanova Park es uno de los campings más grandes y completos de Cataluña, situado a pocos minutos de la playa y del centro de Vilanova i la Geltrú.</p>
+                <p className="text-white/70 leading-relaxed">Nuestros dos puntos de venta están estratégicamente ubicados dentro del recinto para dar servicio tanto a los campistas de parcela como a los de bungalow y mobilhome.</p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+      
       {/* MAPA */}
       <section className="py-16 bg-background">
         <div className="container px-6">

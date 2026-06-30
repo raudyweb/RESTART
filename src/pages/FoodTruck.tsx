@@ -45,6 +45,10 @@ const FoodTruck = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+  title="Food Truck | Restart Coffee"
+  description="Descubre nuestro Food Truck en el Camping Vilanova Park. Café de especialidad, brunch y la esencia de Restart Coffee también al aire libre."
+/>
       <Navbar />
 
       {/* HERO */}

@@ -7,6 +7,22 @@ type SEOProps = {
 };
 
 const SEO = ({ title, description, image = "/preview.jpg" }: SEOProps) => {
+  const schema = {
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  name: "Restart Coffee",
+  image: image,
+  description: description,
+  telephone: "+34 621 30 67 20",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Carrer dels Escolapis, 8",
+    addressLocality: "Vilanova i la Geltrú",
+    addressRegion: "Barcelona",
+    postalCode: "08800",
+    addressCountry: "ES"
+  }
+};
   return (
     <Helmet>
       <title>{title}</title>

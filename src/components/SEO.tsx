@@ -38,6 +38,9 @@ const SEO = ({ title, description, image = "/preview.jpg" }: SEOProps) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <script type="application/ld+json">
+  {JSON.stringify(schema)}
+</script>
     </Helmet>
   );
 };

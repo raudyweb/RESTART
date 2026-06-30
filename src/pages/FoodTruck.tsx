@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import camping1 from "@/assets/Camping1.jpg";
 import camping2 from "@/assets/Camping2.jpg";
 import camping3 from "@/assets/Camping3.jpg";
+import SEO from "@/components/SEO";
 
 const useInView = (threshold = 0.15) => {
   const ref = useRef<HTMLDivElement>(null);

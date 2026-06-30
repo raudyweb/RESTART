@@ -6,6 +6,7 @@ import terraceImg from "@/assets/Interior.png";
 import interiorImg from "@/assets/restaurant-interior.jpg";
 import facadeImg from "@/assets/Interior.png";
 import tableImg from "@/assets/restaurant-table.jpg";
+import SEO from "@/components/SEO";
 
 const useInView = (threshold = 0.15) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -47,6 +48,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+  title="Sobre Nosotros | Restart Coffee"
+  description="Conoce la historia de Restart Coffee, nuestro café de especialidad, el proyecto Food Truck y el obrador artesanal MACU Bakery."
+/>
       <Navbar />
 
       {/* HERO */}

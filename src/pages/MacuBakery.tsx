@@ -48,6 +48,10 @@ const MacuBakery = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+  title="MACU Bakery | Obrador sin gluten"
+  description="Conoce MACU Bakery, nuestro obrador de repostería artesanal sin gluten elaborado con ingredientes de calidad y mucho mimo."
+/>
       <Navbar />
 
       {/* HERO */}

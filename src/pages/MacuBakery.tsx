@@ -7,6 +7,7 @@ import macuObrador2 from "@/assets/MACU-OBRADOR2.jpg";
 import macuObrador3 from "@/assets/MACU-OBRADOR3.jpg";
 import macuLocal from "@/assets/MACU-LOCAL.jpg";
 import macuProd1 from "@/assets/MACU-PROD1.jpg";
+import SEO from "@/components/SEO";
 
 const useInView = (threshold = 0.15) => {
   const ref = useRef<HTMLDivElement>(null);

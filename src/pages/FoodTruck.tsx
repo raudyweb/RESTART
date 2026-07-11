@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import camping1 from "@/assets/Camping1.jpg";
-import camping2 from "@/assets/Camping2.jpg";
+import camping2 from "@/assets/Vilaovapark1.jpg";
 import camping3 from "@/assets/Camping3.jpg";
 import SEO from "@/components/SEO";
 

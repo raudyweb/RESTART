@@ -3,9 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImg from "@/assets/about.jpg";
 import terraceImg from "@/assets/Interior.png";
-import interiorImg from "@/assets/restaurant-interior.jpg";
+import interiorImg from "@/assets/Acogedor2.jpg";
 import facadeImg from "@/assets/Interior.png";
-import tableImg from "@/assets/restaurant-table.jpg";
+import tableImg from "@/assets/Acogedor.jpg";
 import SEO from "@/components/SEO";
 
 const useInView = (threshold = 0.15) => {

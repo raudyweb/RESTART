@@ -29,7 +29,7 @@ const ReviewsSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
             Lo que dicen nuestros clientes
           </h2>
-          <p className="text-muted-foreground mt-4 text-sm">4.8 ★ · +180 reseñas en Google</p>
+          <p className="text-muted-foreground mt-4 text-sm">4.8 ★ · +300 reseñas en Google</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {reviews.map((review, index) => (

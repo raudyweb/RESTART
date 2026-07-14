@@ -37,7 +37,7 @@ const AboutSection = () => (
           </div>
         <div className="absolute -bottom-4 -left-4 bg-foreground rounded-xl px-5 py-4 shadow-lg border border-border/40">
            <p className="font-display text-2xl font-semibold text-white">4.8 <span className="text-yellow-400">★</span></p>
-             <p className="text-xs text-white/80 mt-0.5">+150 reseñas en Google</p>
+             <p className="text-xs text-white/80 mt-0.5">+300 reseñas en Google</p>
           </div>
         </div>
       </div>
